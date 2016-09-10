@@ -1,0 +1,22 @@
+PODS:
+  - NightFoxHelper (0.1.0)
+  - Nimble (3.2.0)
+  - Quick (0.9.3)
+
+DEPENDENCIES:
+  - NightFoxHelper (from `../`)
+  - Nimble (~> 3.0)
+  - Quick (~> 0.8)
+
+EXTERNAL SOURCES:
+  NightFoxHelper:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  NightFoxHelper: f4840e2f51a7d77300ef3fae46074b999f344c2a
+  Nimble: 703854335d181df169bbca9c97117b5cf8c47c1d
+  Quick: 13a2a2b19a5d8e3ed4fd0c36ee46597fd77ebf71
+
+PODFILE CHECKSUM: dd95bdc10ad67d571942301c4c8792ab612e0bf8
+
+COCOAPODS: 1.1.0.beta.1
