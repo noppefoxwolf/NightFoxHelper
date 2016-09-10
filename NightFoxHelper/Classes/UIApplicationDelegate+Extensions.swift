@@ -25,9 +25,9 @@ public extension UIApplicationDelegate {
     }
   }
   
-  public func boot(viewController: UIViewController) -> UIWindow {
+  public func createWindow(rootViewController: UIViewController) -> UIWindow {
     let window = UIWindow(frame: UIScreen.mainScreen().bounds)
-    window.rootViewController = viewController
+    window.rootViewController = rootViewController
     window.makeKeyAndVisible()
     return window
   }
