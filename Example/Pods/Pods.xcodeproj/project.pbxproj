@@ -82,6 +82,7 @@
 		D07317A62864F09E1D383E85BC33D5FC /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875A7681674D572B7002D69BBCD1BA09 /* Example.swift */; };
 		D41F628A81153A978EB209E4FE925700 /* Nimble.h in Headers */ = {isa = PBXBuildFile; fileRef = BE582507271FE02BA93C412C422D4ED8 /* Nimble.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D45CE8C0BBA3FDF74B4E4324BE26D3CA /* Callsite.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC07B6CC006238186A56EEC6E8D3CD88 /* Callsite.swift */; };
+		D71502FD1D8450FC003AF5BE /* UIApplicationDelegate+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71502FC1D8450FC003AF5BE /* UIApplicationDelegate+Extensions.swift */; };
 		D7B2310B1D8445DB0047ECD6 /* Storyboard+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B2310A1D8445DB0047ECD6 /* Storyboard+Extensions.swift */; };
 		D7B2310D1D84461E0047ECD6 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B2310C1D84461E0047ECD6 /* UIView+Extensions.swift */; };
 		D9C7F934FCCE565EA789FA6ABD11D427 /* QuickSelectedTestSuiteBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03925EC2DD9F80DCD0C2E5301B52DC9C /* QuickSelectedTestSuiteBuilder.swift */; };
@@ -239,6 +240,7 @@
 		CB75D143FA2C1D4F42F8F03369239006 /* ObjCMatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObjCMatcher.swift; path = Sources/Nimble/Wrappers/ObjCMatcher.swift; sourceTree = "<group>"; };
 		D29528E2ADACEB31F5B2380DA50612C1 /* BeLogical.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeLogical.swift; path = Sources/Nimble/Matchers/BeLogical.swift; sourceTree = "<group>"; };
 		D365431FBA3C40A9570E9266B44005D7 /* NMBExceptionCapture.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMBExceptionCapture.m; path = Sources/Nimble/objc/NMBExceptionCapture.m; sourceTree = "<group>"; };
+		D71502FC1D8450FC003AF5BE /* UIApplicationDelegate+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplicationDelegate+Extensions.swift"; sourceTree = "<group>"; };
 		D772AF03D0B82E63647D129AEA9CCF1B /* SuiteHooks.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SuiteHooks.swift; path = Sources/Quick/Hooks/SuiteHooks.swift; sourceTree = "<group>"; };
 		D7B2310A1D8445DB0047ECD6 /* Storyboard+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Storyboard+Extensions.swift"; sourceTree = "<group>"; };
 		D7B2310C1D84461E0047ECD6 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
@@ -568,6 +570,7 @@
 			children = (
 				D7B2310A1D8445DB0047ECD6 /* Storyboard+Extensions.swift */,
 				D7B2310C1D84461E0047ECD6 /* UIView+Extensions.swift */,
+				D71502FC1D8450FC003AF5BE /* UIApplicationDelegate+Extensions.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -853,6 +856,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7B2310D1D84461E0047ECD6 /* UIView+Extensions.swift in Sources */,
+				D71502FD1D8450FC003AF5BE /* UIApplicationDelegate+Extensions.swift in Sources */,
 				D7B2310B1D8445DB0047ECD6 /* Storyboard+Extensions.swift in Sources */,
 				713BDC61C14E267129585CF47A916FC4 /* NightFoxHelper-dummy.m in Sources */,
 			);
