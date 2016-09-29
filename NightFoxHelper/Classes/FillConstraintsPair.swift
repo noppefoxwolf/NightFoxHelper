@@ -13,7 +13,7 @@ public struct FillConstraintsPair {
   var h: [NSLayoutConstraint]
   
   public init(view: UIView, name: String? = nil) {
-    let viewName = name ?? type(of: view).properName
+    let viewName = name ?? type(of: view).className
     let views    = [viewName: view]
     let vConstraints = NSLayoutConstraint.constraints(withVisualFormat: "V:|[\(viewName)]|",
       options: .alignAllLeft,

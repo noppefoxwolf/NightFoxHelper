@@ -37,4 +37,30 @@ public extension ParentViewControllerFindable where Self: UIView {
   }
 }
 
+public extension UIView {
+  public func captureImage(width: CGFloat? = nil) -> UIImage? {
+    let imageHeight = width != nil ? (bounds.size.height * (width! / bounds.size.width)) : bounds.size.width
+    let imageWidth  = width ?? bounds.width
+    let imageBounds = CGRect(x: 0, y: 0, width: imageWidth, height: imageHeight)
+    
+    UIGraphicsBeginImageContextWithOptions(imageBounds.size, true, 0)
+    
+    drawHierarchy(in: imageBounds, afterScreenUpdates: true)
+    
+    var image: UIImage?
+    let contextImage = UIGraphicsGetImageFromCurrentImageContext()
+    
+    if let contextImage = contextImage, let cgImage = contextImage.cgImage {
+      image = UIImage(
+        cgImage: cgImage,
+        scale: UIScreen.main.scale,
+        orientation: contextImage.imageOrientation
+      )
+    }
+    
+    UIGraphicsEndImageContext()
+    
+    return image
+  }
+}
 

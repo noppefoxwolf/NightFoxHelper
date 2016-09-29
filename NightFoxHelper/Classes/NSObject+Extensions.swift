@@ -9,7 +9,11 @@
 import UIKit
 
 extension NSObject {
-  static var properName: String {
+  static var className: String {
     return NSStringFromClass(self).components(separatedBy: ".").last!
+  }
+  
+  var className: String {
+    return type(of: self).className
   }
 }

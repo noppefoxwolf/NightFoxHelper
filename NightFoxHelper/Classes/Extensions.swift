@@ -1,5 +1,5 @@
 //
-//  Array+Extensions.swift
+//  Extensions.swift
 //  Pods
 //
 //  Created by Tomoya Hirano on 2016/09/30.
@@ -26,5 +26,35 @@ public extension Array where Element: Equatable {
     } else {
       return self[prevIndex]
     }
+  }
+  
+  public mutating func remove(_ element: Element) -> Bool {
+    guard let index = index(of: element) else { return false }
+    remove(at: index)
+    return true
+  }
+  
+  public mutating func remove(_ elements: [Element]) {
+    elements.forEach { remove($0) }
+  }
+}
+
+extension Collection {
+  subscript(safe index: Index) -> _Element? {
+    return index >= startIndex && index < endIndex ? self[index] : nil
+  }
+}
+
+extension Comparable {
+  func clamped(min: Self, max: Self) -> Self {
+    if self < min {
+      return min
+    }
+    
+    if self > max {
+      return max
+    }
+    
+    return self
   }
 }

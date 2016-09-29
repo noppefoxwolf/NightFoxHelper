@@ -36,4 +36,8 @@ public extension UIAlertController {
     guard condition else { return }
     addAction(UIAlertAction(title: title, style: .destructive, handler: handler))
   }
+  
+  public func show(completion: (() -> Void)? = nil) {
+    UIApplication.shared.topViewController()?.present(self, animated: true, completion: completion)
+  }
 }
