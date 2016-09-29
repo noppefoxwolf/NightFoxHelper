@@ -1,6 +1,0 @@
-framework module NightFoxHelper {
-  umbrella header "NightFoxHelper-umbrella.h"
-
-  export *
-  module * { export * }
-}
