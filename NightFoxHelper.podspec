@@ -28,10 +28,10 @@ Helper methods and extensions for development of my product.
   s.source           = { :git => 'https://github.com/noppefoxwolf/NightFoxHelper.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/noppefoxwolf'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'NightFoxHelper/Classes/**/*'
-  
+
   # s.resource_bundles = {
   #   'NightFoxHelper' => ['NightFoxHelper/Assets/*.png']
   # }

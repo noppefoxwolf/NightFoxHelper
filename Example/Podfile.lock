@@ -13,7 +13,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  NightFoxHelper: 6661486aa4abe56b23381473b111f733528366ff
+  NightFoxHelper: 66dad84c778b060cea07313c344021734d8dcfc6
   Nimble: 56fc9f5020effa2206de22c3dd910f4fb011b92f
   Quick: 5d290df1c69d5ee2f0729956dcf0fd9a30447eaa
 
