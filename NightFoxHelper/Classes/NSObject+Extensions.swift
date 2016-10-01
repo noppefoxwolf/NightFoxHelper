@@ -8,12 +8,12 @@
 
 import UIKit
 
-extension NSObject {
-  static var className: String {
+public extension NSObject {
+  public static var className: String {
     return NSStringFromClass(self).components(separatedBy: ".").last!
   }
   
-  var className: String {
+  public var className: String {
     return type(of: self).className
   }
 }
