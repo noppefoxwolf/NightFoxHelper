@@ -29,7 +29,7 @@ public struct FillConstraintsPair {
 }
 
 public extension UIView {
-  public func add(fillConstraintsPair: FillConstraintsPair) {
+  public func addConstraints(_ fillConstraintsPair: FillConstraintsPair) {
     addConstraints(fillConstraintsPair.v)
     addConstraints(fillConstraintsPair.h)
   }
