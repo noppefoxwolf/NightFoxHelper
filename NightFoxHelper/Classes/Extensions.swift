@@ -28,6 +28,7 @@ public extension Array where Element: Equatable {
     }
   }
   
+  @discardableResult
   public mutating func remove(_ element: Element) -> Bool {
     guard let index = index(of: element) else { return false }
     remove(at: index)

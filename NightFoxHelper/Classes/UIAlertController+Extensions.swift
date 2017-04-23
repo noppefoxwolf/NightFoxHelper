@@ -24,17 +24,34 @@ public extension UIAlertController {
     return UIAlertController(title: title, message: message, preferredStyle: .alert)
   }
   
-  public func addDefault(_ title: String, condition: Bool = true, handler: ((UIAlertAction) -> Void)?) {
+  public func addDefault(_ title: String,
+                         image: UIImage? = nil,
+                         condition: Bool = true,
+                         handler: ((UIAlertAction) -> Void)? = nil) {
     guard condition else { return }
-    addAction(UIAlertAction(title: title, style: .default, handler: handler))
+    let action = UIAlertAction(title: title, style: .default, handler: handler)
+    action.setValue(image, forKey: "image")
+    addAction(action)
   }
-  public func addCancel(_ title: String, condition: Bool = true, handler: ((UIAlertAction) -> Void)?) {
+  
+  public func addCancel(_ title: String = "キャンセル",
+                        image: UIImage? = nil,
+                        condition: Bool = true,
+                        handler: ((UIAlertAction) -> Void)? = nil) {
     guard condition else { return }
-    addAction(UIAlertAction(title: title, style: .cancel, handler: handler))
+    let action = UIAlertAction(title: title, style: .cancel, handler: handler)
+    action.setValue(image, forKey: "image")
+    addAction(action)
   }
-  public func addDestructive(_ title: String, condition: Bool = true, handler: ((UIAlertAction) -> Void)?) {
+  
+  public func addDestructive(_ title: String,
+                             image: UIImage? = nil,
+                             condition: Bool = true,
+                             handler: ((UIAlertAction) -> Void)? = nil) {
     guard condition else { return }
-    addAction(UIAlertAction(title: title, style: .destructive, handler: handler))
+    let action = UIAlertAction(title: title, style: .destructive, handler: handler)
+    action.setValue(image, forKey: "image")
+    addAction(action)
   }
   
   public func show(completion: (() -> Void)? = nil) {
