@@ -22,7 +22,7 @@ pod "NightFoxHelper"
 
 ## Author
 
-Tomoya Hirano, tomoya.hirano@dena.com
+Tomoya Hirano, noppelabs@gmail.com
 
 ## License
 
