@@ -8,7 +8,7 @@
 import UIKit
 
 open class AutoResizeTableViewCell: UITableViewCell {
-  var baseStackView: UIStackView! { return nil }
+  open var baseStackView: UIStackView! { return nil }
   
   override open var intrinsicContentSize: CGSize { return baseStackView.systemLayoutSizeFitting(UILayoutFittingCompressedSize) }
   
