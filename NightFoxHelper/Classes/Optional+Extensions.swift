@@ -9,7 +9,7 @@
 import UIKit
 
 public extension Optional {
-  public func getOr(_ value: Wrapped) -> Wrapped {
+  public func wrapOr(_ value: Wrapped) -> Wrapped {
     return self ?? value
   }
   

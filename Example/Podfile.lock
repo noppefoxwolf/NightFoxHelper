@@ -1,5 +1,5 @@
 PODS:
-  - NightFoxHelper (0.4.0)
+  - NightFoxHelper (0.7.0)
   - Nimble (7.0.2)
   - Quick (1.2.0)
 
@@ -13,7 +13,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  NightFoxHelper: 4079ac12e7a20fbbd61e227c74e5c06b690f5021
+  NightFoxHelper: 66cd511c4eee89977074e1a465c7dcc5ee57d895
   Nimble: bfe1f814edabba69ff145cb1283e04ed636a67f2
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
 
