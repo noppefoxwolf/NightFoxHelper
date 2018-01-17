@@ -10,10 +10,23 @@ import UIKit
 import NightFoxHelper
 
 class ViewController: UIViewController {
-  override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-    let sheet = UIAlertController.actionSheet()
-    sheet.addDefault("ok", image: #imageLiteral(resourceName: "other"), handler: nil)
-    present(sheet, animated: true, completion: nil)
+  @IBOutlet weak var tableView: UITableView!
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    tableView.delegate = self
+    tableView.dataSource = self
+  }
+}
+
+extension ViewController: UITableViewDelegate, UITableViewDataSource {
+  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    return 100
+  }
+  
+  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    let cell = tableView.retrieve(CustomTableViewCell.self, indexPath: indexPath)
+    return cell
   }
 }
 

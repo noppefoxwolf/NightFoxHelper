@@ -20,6 +20,23 @@ public extension UITableView {
   }
 }
 
+var AssociatedObjectHandle: UInt8 = 0
+
+public extension UITableView {
+  var registeredClasses: [UITableViewCell.Type] {
+    get { return ((objc_getAssociatedObject(self, &AssociatedObjectHandle) ?? 0) as? [UITableViewCell.Type]) ?? [] }
+    set { objc_setAssociatedObject(self, &AssociatedObjectHandle, newValue, .OBJC_ASSOCIATION_RETAIN) }
+  }
+  
+  public func retrieve<T: UITableViewCell>(_ cellType: T.Type, indexPath: IndexPath) -> T {
+    if !registeredClasses.contains(where: { $0 === cellType }) {
+      register(cellType)
+      registeredClasses.append(cellType)
+    }
+    return dequeue(cellType, indexPath: indexPath)
+  }
+}
+
 extension UITableView {
   public var lastIndexPath: IndexPath? {
     guard let dataSource = dataSource else { return nil }
