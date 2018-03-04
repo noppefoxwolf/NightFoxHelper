@@ -38,7 +38,7 @@ public extension XIBBindView {
 
 public extension UIView {
   public static var nib: UINib {
-    return UINib(nibName: className, bundle: Bundle.main)
+    return UINib(nibName: className, bundle: Bundle(for: self))
   }
 }
 

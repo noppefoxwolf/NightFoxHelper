@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'NightFoxHelper'
-  s.version          = '0.10.0'
+  s.version          = '0.11.0'
   s.summary          = 'extensions summary.'
 
   s.description      = <<-DESC
