@@ -11,7 +11,7 @@ import UIKit
 public extension UITableView {
   public func register<T: UITableViewCell>(_ cellType: T.Type) {
     let className = cellType.className
-    let nib = UINib(nibName: className, bundle: nil)
+    let nib = UINib(nibName: className, bundle: Bundle(for: cellType))
     register(nib, forCellReuseIdentifier: className)
   }
   

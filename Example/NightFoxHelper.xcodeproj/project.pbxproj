@@ -177,7 +177,6 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				B0798BC980B7AA143C8DDBC5 /* [CP] Embed Pods Frameworks */,
-				DC890058BCF3ADB9ED75F103 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -197,7 +196,6 @@
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
 				3A69FFA65F4C2D2410A3AE02 /* [CP] Embed Pods Frameworks */,
-				C9FC32BBDF52C277FFDCB4C9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -327,36 +325,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NightFoxHelper_Example/Pods-NightFoxHelper_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C9FC32BBDF52C277FFDCB4C9 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NightFoxHelper_Tests/Pods-NightFoxHelper_Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DC890058BCF3ADB9ED75F103 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NightFoxHelper_Example/Pods-NightFoxHelper_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E3FF3FF5F994EDAF00BB0329 /* [CP] Check Pods Manifest.lock */ = {
